@@ -1,9 +1,13 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=Aguafina+Script|La+Belle+Aurore|Nothing+You+Could+Do');
+
+
 :root{
- --white:#fbfbfb;
- --yellow:rgb(253, 206, 78);
- --brown:rgb(54, 39, 33);
- --black:#242424;
+ --brightYellow:#E3B505;
+ --darkBrown:#BB9457;
+ --yellow:#f2b450; 
+ --brown:#382923;
+ --black:#191919;
+ --grey:#A9B2AC;
 }
 
 *{
@@ -18,7 +22,11 @@ body{
  color:var(--black);
 }
 /* global  */
+.bell-fonts{
+font-family: 'La Belle Aurore', cursive;
+}
 /* section padding */
+
 .section-padding{
 padding: 3rem 0;
 }
@@ -47,29 +55,25 @@ padding: 3rem 0;
   margin-left: 10rem;
 }
 .section-title__name{
-font-size: 2rem;
+font-size: 3rem;
 text-transform: capitalize;
+
 }
-.section-title__name--white{
- color: var(--white)
+.section-title__name--dark-brown{
+ color: var(--darkBrown)
 }
 .section-title__underline{
  width: 5rem;
  height: .25rem;
  background: var(--yellow);
- margin: 0.5rem 0;
 }
 .section-title__text{
  letter-spacing: 0.10rem;
  line-height: 1.5;
  margin-top: 1rem;
+color:var(--grey);
 }
-.section-title__name--center{
- text-align: center;
-}
-.section-title__underline--center{
- margin: 0 auto;
-}
+
 /* #######end of globals################# */
 /* preloader */
 .preloader{
@@ -78,7 +82,7 @@ text-transform: capitalize;
  left: 0;
  right: 0;
  bottom: 0;
- background: var(--white);
+ background: var(--brightYellow);
  z-index: 100;
  display: grid;
  justify-content: center;
@@ -106,23 +110,24 @@ text-align: center;
 z-index: 3;
 }
 .banner__title{
- font-size: 4rem;
+ font-size: 9rem;
  text-transform: capitalize;
- color: var(--white);
+ color: var(--brightYellow);
+
 }
 
 .banner__social-icon{
  display: block;
  text-decoration: none;
- color: var(--white);
- border:0.10rem solid var(--white);
+ color: var(--black);
+ border:0.10rem solid var(--black);
  border-radius: 50%;
  padding: 0.25rem;
  transition: all 0.5s linear;
 
 }
 .banner__social-icon:hover{
-background: var(--white);
+background: var(--brightYellow);
 color: var(--black);
 
 }
@@ -192,7 +197,7 @@ z-index: 2;
  left: 0;
  height: 100%;
  width: 10rem;
- background: rgba(253, 206, 78,0.6);
+ background: rgba(242, 180, 80,0.9);
  z-index: 3;
 
 }
@@ -207,7 +212,7 @@ z-index: 2;
 }
 .nav__single-link:hover{
 background: var(--brown);
-color: var(--yellow);
+color: rgba(242, 180, 80,0.9);
 padding-left: 1.5rem;
 }
 /* click */
@@ -283,7 +288,7 @@ padding-left: 1.5rem;
 
 .drink{
  background: var(--brown);
- color: var(--white);
+ color: var(--brightYellow);
  text-transform: capitalize;
 }
 .drink-form,.drink-card{
@@ -294,7 +299,7 @@ padding-left: 1.5rem;
   justify-content: center;
 }
 .drink-form__feedback{
-  border:0.10rem solid var(--white);
+  border:0.10rem solid var(--brightYellow);
   padding: 0.25rem;
   display: none;
 }
@@ -308,7 +313,10 @@ padding-left: 1.5rem;
   color:green;
   border-color: green;
 }
-
+.drink-form__title,.drink-card__title{
+  
+  font-size: 3rem;
+}
 
 .input-name,.input-lastname,.input-email{
   width: 100%;
@@ -318,12 +326,12 @@ padding-left: 1.5rem;
   border-radius: 0.5rem;
   padding: 0.25rem 0.5rem;
   background: rgba(111, 87, 77, 0.6);
-  color:var(--white);
+  color:var(--darkBrown);
   border:none;
   outline: none;
 }
 .input-name::placeholder,.input-email::placeholder,.input-lastname::placeholder{
-  color: var(--white);
+  color: var(--darkBrown);
   text-transform: capitalize;
 }
 .input-submit{
@@ -348,9 +356,14 @@ padding-left: 1.5rem;
   align-items: center;
   text-align: left;
   grid-gap: 1rem;
+  border:0.10rem solid rgba(111, 87, 77, 0.6);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
 }
 .person__thumbnail{
   border-radius: 50%;
+  
 }
 @media screen and (min-width:768px){
 
@@ -382,7 +395,7 @@ transform:scale(1.2);
    top: 50%;
    left: 50%;
    font-size: 4rem;
-   color: var(--white);
+   color: var(--brightYellow);
    transform: scale(0);
    transition: all 0.5 ease;
    text-decoration: none;
@@ -482,7 +495,7 @@ transform:scale(1.2);
 .work-modal__close{
   position: fixed;
   font-size: 3rem;
-  color: var(--white);
+  color: var(--brightYellow);
   bottom:5%;
   right: 5%;
   transition:all 0.5s linear;
@@ -515,10 +528,13 @@ color: red;
 .contact-item__title{
   text-transform: uppercase;
   margin: 0.5rem 0;
+  letter-spacing: 0.25rem;
+  font-style: italic;
 }
 .contact-item__text{
   font-size: 1rem;
   text-transform: uppercase;
+  color: var(--grey);
 }
 
 @media screen and (min-width:768px){
