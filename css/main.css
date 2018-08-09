@@ -110,10 +110,15 @@ text-align: center;
 z-index: 3;
 }
 .banner__title{
- font-size: 9rem;
+ font-size: 5rem;
  text-transform: capitalize;
  color: var(--brightYellow);
 
+}
+
+@media screen and (min-width:992px){
+  .banner__title{
+    font-size: 9rem;}
 }
 
 .banner__social-icon{
@@ -423,7 +428,7 @@ transform:scale(1.2);
 
 
   .work-container{
-    height: 100vh;
+    height: 130vh;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, 1fr);
    
@@ -480,17 +485,18 @@ transform:scale(1.2);
 }
 .work-modal__item{
   background:url('../img/work-1.jpeg')center/cover;
-  height:70vh;
-  width: 80vw;
+  height: 60vh;
+  width: 70vw;
   border:0.5rem solid var(--yellow);
   border-radius: 0.4rem;
 }
 @media screen and (min-width:768px){
   .work-modal__item{
-    height: 80vh;
-    width: 60vw;
+    height: 70vh;
+  width: 55vw;
   }
 }
+
 /* modal close */
 .work-modal__close{
   position: fixed;
