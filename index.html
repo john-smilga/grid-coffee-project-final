@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Coffee Shop</title>
+  <title>Coffee Shop Recording</title>
   <!-- main css -->
   <link rel="stylesheet" href="css/main.css">
   <!-- font awesome -->
@@ -15,13 +15,16 @@
 <body>
   <!-- preloader -->
   <div class="preloader">
-    <img src="img/preloader.gif" alt="" class="preloader__item">
+    <img src="img/preloader.gif" alt="preloader" class="preloader__item">
   </div>
-  <!--end of preloader -->
-  <!-- header  -->
+
+
+
+  <!-- end preloader -->
+  <!-- header -->
   <header class="header" id="header">
     <!-- banner -->
-    <section class="banner">
+    <div class="banner">
       <h1 class="banner__title bell-fonts">coffee junkie</h1>
       <div class="banner__icons">
         <a href="#" class="banner__social-icon">
@@ -36,34 +39,31 @@
         <a href="#" class="banner__social-icon">
           <i class="fab fa-instagram fa-fw"></i>
         </a>
-
       </div>
-    </section>
+    </div>
     <!-- end of banner -->
-    <!-- video -->
+    <!-- video  -->
     <article class="video__container">
-
-
       <video class="video__item" autoplay muted loop>
-        <source src="video/video.mp4">
+        <source src="video/coffee.mp4" type="video/mp4">
+        <source src="video/coffee.ogv" type="video/ogv">
+        <source src="video/coffee.webm" type="video/webm"> Your browser does not support vidoe tag
       </video>
     </article>
-    <!--end of  video -->
+    <!-- end of video  -->
     <!-- nav btn -->
     <div class="navBtn">
       <i class="fas fa-bars"></i>
     </div>
-    <!-- nav  -->
+    <!-- nav -->
     <nav class="nav">
       <ul class="nav__links">
         <!-- logo -->
         <li>
-          <a href="#home" class="nav__single-link">
-            <img src="img/navLogo.png" alt="mainLogo">
+          <a href="#" class="nav__single-link nav__logo">
+            <img src="img/navLogo.svg" alt="">
           </a>
-
         </li>
-        <!-- links -->
         <li>
           <a href="#header" class="nav__single-link">home</a>
         </li>
@@ -71,7 +71,7 @@
           <a href="#about" class="nav__single-link">about</a>
         </li>
         <li>
-          <a href="#drink" class="nav__single-link">free drink</a>
+          <a href="#drink" class="nav__single-link">free dink</a>
         </li>
         <li>
           <a href="#work" class="nav__single-link">work</a>
@@ -81,22 +81,19 @@
         </li>
       </ul>
     </nav>
-    <!-- video overlay -->
-    <div class="video__overlay"></div>
-    <!-- end of video overlay -->
     <!-- video switch -->
     <div class="video__switch-container">
-
       <div class="video__switch">
         <span>on</span>
         <span>off</span>
         <div class="video__switch-btn"></div>
       </div>
+
+
     </div>
-    <!-- end of video switch -->
   </header>
-  <!--end of  header  -->
-  <!-- about section -->
+  <!-- end of header -->
+  <!-- about -->
   <section class="about section-padding" id="about">
     <div class="grid-container grid-container--medium-2">
       <!-- about container -->
@@ -105,172 +102,206 @@
         <div class="section-title">
           <h1 class="section-title__name bell-fonts">our story</h1>
           <div class="section-title__underline"></div>
-          <p class="section-title__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi laborum nihil ipsam placeat non necessitatibus
-            similique, quasi quia cumque eius.</p>
+          <p class="section-title__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis et, doloremque blanditiis tempora deserunt repudiandae!
+            Reprehenderit amet reiciendis recusandae odio.</p>
         </div>
         <!-- second child -->
-        <div class="about__img">
-          <img src="img/aboutImg-1.jpeg" class="about__img-item" alt="">
+        <div class="about__img ">
+          <img src="img/aboutImg-1.jpeg" class="about__img-item" alt="about-img">
         </div>
       </article>
-      <!-- end about container -->
+      <!-- end of about container -->
       <!-- about container -->
       <article class="about-container">
         <!-- first child -->
-        <!-- section-title -->
         <div class="section-title">
           <h1 class="section-title__name bell-fonts">what we do</h1>
           <div class="section-title__underline"></div>
-          <p class="section-title__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi laborum nihil ipsam placeat non necessitatibus
-            similique, quasi quia cumque eius.</p>
+          <p class="section-title__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis et, doloremque blanditiis tempora deserunt repudiandae!
+            Reprehenderit amet reiciendis recusandae odio.</p>
         </div>
-        <!-- end of sectino title -->
         <!-- second child -->
         <div class="about__img about__img-special">
-          <img src="img/aboutImg-2.jpeg" class="about__img-item" alt="">
+          <img src="img/aboutImg-2.jpeg" class="about__img-item" alt="about-img">
         </div>
       </article>
-      <!-- end about container -->
+      <!-- end of about container -->
     </div>
   </section>
-  <!-- about section -->
-  <!-- drink section -->
-  <section class="drink section-padding" id="drink">
+  <!-- end of about -->
 
+  <!-- drink section -->
+
+  <section class="drink section-padding" id="drink">
     <div class="grid-container">
       <!-- first item -->
       <form class="drink-form">
         <p class="drink-form__feedback">some text</p>
         <h3 class="drink-form__title bell-fonts">to get free drinks</h3>
         <div class="drink-form__input">
-          <input type="text" name="" maxlength="15" id="" class="input-name" placeholder="name" id="input-name">
+          <input type="text" name="" id="" maxlength="15" class="input-name" placeholder="name">
         </div>
         <div class="drink-form__input">
           <input type="text" name="" id="" maxlength="15" class="input-lastname" placeholder="last name">
         </div>
-        <div>
-          <input type="email" name="" id="" class="input-email" placeholder="email">
+        <div class="drink-form__input">
+          <input type="email" name="" id="" maxlength="15" class="input-email" placeholder="email">
         </div>
         <input type="submit" value="sign up" class="input-submit">
       </form>
-      <!-- second item -->
+      <!-- sedond item -->
       <article class="drink-card">
-        <h3 class="drink-card__title bell-fonts">Lucky People: </h3>
+        <h3 class="drink-card__title bell-fonts">lucky people:</h3>
         <div class="drink-card__list">
-
-          <div class="person">
-            <img src="img/person-1.jpeg" alt="" class="person__thumbnail">
+          <!-- <div class="person">
+            <img src="img/person-1.jpeg" alt="person" class="person__thumbnail">
             <h4 class="person__name">john</h4>
             <h4 class="person__last-name">doe</h4>
-          </div>
+          </div> -->
+          <!-- <div class="person">
+            <img src="img/person-1.jpeg" alt="person" class="person__thumbnail">
+            <h4 class="person__name">john</h4>
+            <h4 class="person__last-name">doe</h4>
+          </div> -->
         </div>
+
       </article>
     </div>
+
   </section>
-  <!--end of drink section -->
-  <!-- work-->
+  <!-- end of drink section -->
+  <!-- work -->
+
   <section class="work section-padding" id="work">
-    <!-- section-title -->
+    <!-- section title -->
     <div class="section-title section-title--left">
-      <h1 class="section-title__name section-title__name bell-fonts">our work</h1>
+      <h1 class="section-title__name bell-fonts">our work</h1>
       <div class="section-title__underline"></div>
 
     </div>
-    <!-- end of sectino title -->
+    <!-- end of section title -->
     <div class="work-container">
       <!-- single work item -->
       <article class="work-item item-1">
         <img src="img/work-1.jpeg" alt="" class="work-item__img">
-        <a class="work-item__icon " data-id="1">
+        <a href="#" class="work-item__icon" data-id="1">
           <i class="fas fa-search"></i>
         </a>
       </article>
-      <!-- end of single work item -->
+      <!-- end single work item -->
       <!-- single work item -->
       <article class="work-item item-2">
         <img src="img/work-2.jpeg" alt="" class="work-item__img">
-        <a class="work-item__icon " data-id="2">
+        <a href="#" class="work-item__icon" data-id="2">
           <i class="fas fa-search"></i>
         </a>
       </article>
-      <!-- end of single work item -->
+      <!-- end single work item -->
       <!-- single work item -->
       <article class="work-item item-3">
         <img src="img/work-3.jpeg" alt="" class="work-item__img">
-        <a class="work-item__icon " data-id="3">
+        <a href="#" class="work-item__icon" data-id="3">
           <i class="fas fa-search"></i>
         </a>
       </article>
-      <!-- end of single work item -->
+      <!-- end single work item -->
       <!-- single work item -->
       <article class="work-item item-4">
         <img src="img/work-4.jpeg" alt="" class="work-item__img">
-        <a class="work-item__icon " data-id="4">
+        <a href="#" class="work-item__icon" data-id="4">
           <i class="fas fa-search"></i>
         </a>
       </article>
-      <!-- end of single work item -->
+      <!-- end single work item -->
       <!-- single work item -->
       <article class="work-item item-5">
         <img src="img/work-5.jpeg" alt="" class="work-item__img">
-        <a class="work-item__icon " data-id="5">
+        <a href="#" class="work-item__icon" data-id="5">
           <i class="fas fa-search"></i>
         </a>
       </article>
-      <!-- end of single work item -->
+      <!-- end single work item -->
       <!-- single work item -->
       <article class="work-item item-6">
         <img src="img/work-6.jpeg" alt="" class="work-item__img">
-        <a class="work-item__icon" data-id="6">
+        <a href="#" class="work-item__icon" data-id="6">
           <i class="fas fa-search"></i>
         </a>
       </article>
-      <!-- end of single work item -->
+      <!-- end single work item -->
       <!-- single work item -->
       <article class="work-item item-7">
         <img src="img/work-7.jpeg" alt="" class="work-item__img">
-        <a class="work-item__icon " data-id="7">
+        <a href="#" class="work-item__icon" data-id="7">
           <i class="fas fa-search"></i>
         </a>
       </article>
-      <!-- end of single work item -->
+      <!-- end single work item -->
       <!-- single work item -->
       <article class="work-item item-8">
         <img src="img/work-8.jpeg" alt="" class="work-item__img">
-        <a class="work-item__icon" data-id="8">
+        <a href="#" class="work-item__icon" data-id="8">
           <i class="fas fa-search"></i>
         </a>
       </article>
-      <!-- end of single work item -->
+      <!-- end single work item -->
       <!-- single work item -->
       <article class="work-item item-9">
         <img src="img/work-9.jpeg" alt="" class="work-item__img">
-        <a class="work-item__icon" data-id="9">
+        <a href="#" class="work-item__icon" data-id="9">
           <i class="fas fa-search"></i>
         </a>
       </article>
-      <!-- end of single work item -->
+      <!-- end single work item -->
     </div>
+    <!-- modal -->
     <div class="work-modal">
       <div class="work-modal__item"></div>
       <div class="work-modal__close">
         <i class="fas fa-window-close"></i>
       </div>
     </div>
+
+
+
+
+
+
   </section>
-  <!-- work -->
+  <!-- end of work -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   <!-- contact section -->
   <section class="contact section-padding" id="contact">
-    <!-- section-title -->
+
+    <!-- section title -->
     <div class="section-title section-title--left">
-      <h1 class="section-title__name section-title__name bell-fonts">contact </h1>
+      <h1 class="section-title__name bell-fonts">our work</h1>
       <div class="section-title__underline"></div>
+
     </div>
-    <!-- end of sectino title -->
+    <!-- end of section title -->
+
 
     <div class="contact-container">
-      <iframe class="contact-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d380510.6841309331!2d-88.01284431879517!3d41.83390249486842!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2c3cd0f4cbed%3A0xafe0a6ad09c0c000!2sChicago%2C+IL!5e0!3m2!1sen!2sus!4v1533417191427"
-        width="100%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <iframe class="contact-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387190.289576151!2d-74.26056209591941!3d40.697668401320975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew+York%2C+NY!5e0!3m2!1sen!2sus!4v1533864690575"
+        width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
       <div class="contact-info">
         <!-- single contact item -->
         <div class="contact-item">
@@ -278,8 +309,7 @@
             <i class="fas fa-map-pin"></i>
           </div>
           <h2 class="contact-item__title">address</h2>
-          <p class="contact-item__text">8139 W coffee street, san diego </p>
-
+          <p class="contact-item__text">8139 w coffee street, san diego</p>
         </div>
         <!-- end of single contact item -->
         <!-- single contact item -->
@@ -291,31 +321,30 @@
           <p class="contact-item__text">
             <span>
               <i class="fas fa-phone"></i>
-            </span> + 123 456 789
+            </span>
+            +123 456 789
           </p>
           <p class="contact-item__text">
             <span>
               <i class="fas fa-envelope"></i>
-            </span> email@email.com
-          </p>
-
+            </span>email@email.com</p>
         </div>
         <!-- end of single contact item -->
         <!-- single contact item -->
         <div class="contact-item">
           <div class="contact-item__icon">
-            <i class="far fa-clock"></i>
+            <i class="fas fa-clock"></i>
           </div>
-          <h2 class="contact-item__title ">work time</h2>
+          <h2 class="contact-item__title">work time</h2>
           <p class="contact-item__text">monday - friday 8.00am - 8.00pm</p>
-          <p class="contact-item__text">saturtday - sunday 9.00 - 10.00pm</p>
-
+          <p class="contact-item__text">saturday - sunday 9.00am -10pm</p>
         </div>
         <!-- end of single contact item -->
       </div>
     </div>
   </section>
-  <!--end of contact section -->
+
+  <!--end of  contact section -->
   <script src="js/app.js"></script>
 </body>
 
